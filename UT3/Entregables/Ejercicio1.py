@@ -1,7 +1,11 @@
-import sys
 import shutil
+import sys
 
-umbral=input(int("Introduce un umbral"))
+umbral = int(sys.argv[1])
+uso = shutil.disk_usage("/")
+porcentaje = uso.used / uso.total * 100
 
-if len(sys.argv) != 2:
-    
+if porcentaje >= umbral:
+    print("ALERTA")
+else:
+    print("OK")
