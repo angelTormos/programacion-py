@@ -5,4 +5,6 @@ cont = 0
 
 for i in range(n):
     cont += 1
-    Path.mkdir(str('Backup', cont))
+    ruta = (f"Backup_{cont}")
+    ruta_final = Path(ruta)
+    ruta_final.mkdir()
