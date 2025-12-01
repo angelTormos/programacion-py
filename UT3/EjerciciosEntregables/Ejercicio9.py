@@ -1,9 +1,7 @@
 from pathlib import Path
 
 nombre_aula = input("Introduce el nombre del aula (ej: A201): ")
-num_equipos_str = input("Introduce el número de equipos M (ej: 15): ")
-num_equipos = int(num_equipos_str)
-
+num_equipos = int(input("Introduce el número de equipos M (ej: 15): "))
 
 ruta_aula = Path(nombre_aula)
 

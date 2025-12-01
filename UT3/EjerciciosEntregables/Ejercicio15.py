@@ -1,10 +1,7 @@
 from pathlib import Path
 
-num_aulas_str = input("Introduce el número de aulas (A): ")
-num_pcs_str = input("Introduce el número de PCs por aula (P): ")
-
-num_aulas = int(num_aulas_str)
-num_pcs = int(num_pcs_str)
+num_aulas = int(input("Introduce el número de aulas (A): "))
+num_pcs = int(input("Introduce el número de PCs por aula (P): "))
 
 total_general_logs = 0
 
