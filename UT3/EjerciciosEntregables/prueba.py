@@ -1,4 +1,3 @@
-from pathlib import Path
 
 ip_base = input("Introduce una IP ")
 rango_ini = int(input("Introduce el inicio del rango "))
