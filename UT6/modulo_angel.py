@@ -6,8 +6,6 @@ def mayor(n1, n2):
     else:
         return n2
 
-print(mayor(7, 5))
-
 # Ejercicio 3
 
 def es_par(n):
@@ -16,8 +14,6 @@ def es_par(n):
     else:
         return False
 
-print(es_par(55))
-
 # Ejercicio 6
 
 def es_mayusculas(cad):
@@ -25,8 +21,6 @@ def es_mayusculas(cad):
         return True
     else:
         return False
-    
-print(es_mayusculas('hrthrthtrht'))
 
 # Ejercicio 7
 
@@ -37,8 +31,6 @@ def potencia(base, exp):
         print("La potencia es 1")
     else:
         print("La potencia es", 1 / (base ** abs(exp)))
-    
-print(potencia(44, 5))
 
 # Ejercicio 9
 
@@ -58,8 +50,6 @@ def ordena_mayor_menor(num1, num2, num3):
             return num3, num1, num2
         else:
             return num3, num2, num1
-
-print(ordena_mayor_menor(48, 2, 150))
 
 # Ejercicio 10
 
@@ -81,8 +71,6 @@ def clasifica_circunferencias(x1, y1, r1, x2, y2, r2):
     elif distancia == 0:
         print("Circunferencias concéntricas")
 
-clasifica_circunferencias(123, 32, 4, 543, 564, 87)
-
 # Ejercicio 11
 
 def clasifica_triangulo(a,b,c):
@@ -98,8 +86,6 @@ def clasifica_triangulo(a,b,c):
     else:
         print ("El triangulo es escaleno")
 
-clasifica_triangulo(32, 54, 32)
-
 # Ejercicio 12
 
 def es_bisiesto(anyo):
@@ -109,8 +95,6 @@ def es_bisiesto(anyo):
         return False
     elif anyo % 400 == 0:
         return True
-
-print(es_bisiesto(2029))
 
 # Ejercicio 13
 
@@ -134,8 +118,6 @@ def es_fecha_correcta(dia, mes, year):
     else:
         return True
 
-print(es_fecha_correcta(30, 11, 2028))
-
 # Ejercicio 14
 
 def calcula_ganancias_uva(precio_inicial, kilos, tipo, tamano):
@@ -153,8 +135,6 @@ def calcula_ganancias_uva(precio_inicial, kilos, tipo, tamano):
             precio_final = precio_inicial * kilos
             total = precio_final / 100
             return total
-
-print(calcula_ganancias_uva(12, 150, "A", 1))
 
 # Ejercicio 15
 
@@ -174,8 +154,6 @@ def costes_viaje(n):
     coste_autobus = n * coste_por_alumno
 
     return coste_por_alumno, coste_autobus
-
-print(costes_viaje(67))
 
 # Ejercicio 16
 
@@ -202,8 +180,6 @@ def coste_llamada(tiempo, es_domingo, turno):
     cost_total = coste / 100
     return cost_total
 
-print(coste_llamada(120, "N", "M"))
-
 # Ejercicio 18
 
 def dia_escrito(dia):
@@ -223,8 +199,6 @@ def dia_escrito(dia):
         return "Domingo"
     else:
         return "Día incorrecto"
-    
-print(dia_escrito(7))
 
 # Ejercicio 19
 def num_dias_mes(mes):
@@ -237,8 +211,6 @@ def num_dias_mes(mes):
         return "30 días"
     else:
         return "Mes incorrecto"
-
-print(num_dias_mes(12))
 
 # Ejercicio 20
 def calcula_coste_transporte(peso, zona):      
@@ -258,8 +230,6 @@ def calcula_coste_transporte(peso, zona):
     else:
         return "Peso incorrecto (no podemos transportar paquetes de más de 5Kg)."
 
-print(calcula_coste_transporte(254, 4))
-
 # Ejercicios para practicar bucles
 
 # Ejercicio 1
@@ -274,8 +244,6 @@ def factorial(num):
 
     return resultado
 
-print(factorial(6))
-
 # Ejercicio 5
 
 def pares_entre(num1, num2):
@@ -286,8 +254,6 @@ def pares_entre(num1, num2):
         print(num1)
         num1+=2
 
-pares_entre(2, 9)
-
 # Ejercicio 6
 
 def tabla_multiplicar(n):
@@ -295,8 +261,6 @@ def tabla_multiplicar(n):
     while num<=10:
         print(f" {n} * {num} = {num * n}")
         num+=1
-
-tabla_multiplicar(4)
 
 # Ejercicio 10
 
@@ -322,8 +286,6 @@ def adivina_numero(intentos):
     else:
         print(f"¡Has perdido! El número era: {num_secreto}")
 
-#adivina_numero(6)
-
 # Ejercicio 11
 
 def es_primo(n):
@@ -342,8 +304,6 @@ def es_primo(n):
             
         else:
             return True
-
-print(es_primo(6))
 
 # Ejercicio 20
 
