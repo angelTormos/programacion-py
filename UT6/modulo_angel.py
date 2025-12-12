@@ -259,3 +259,108 @@ def calcula_coste_transporte(peso, zona):
         return "Peso incorrecto (no podemos transportar paquetes de más de 5Kg)."
 
 print(calcula_coste_transporte(254, 4))
+
+# Ejercicios para practicar bucles
+
+# Ejercicio 1
+
+def factorial(num):
+    resultado = 1
+    contador = 2
+
+    while contador <= num:
+        resultado *= contador
+        contador += 1
+
+    return resultado
+
+print(factorial(6))
+
+# Ejercicio 5
+
+def pares_entre(num1, num2):
+    if num1 % 2 == 1:
+        num1 += 1
+
+    while num1 <= num2:
+        print(num1)
+        num1+=2
+
+pares_entre(2, 9)
+
+# Ejercicio 6
+
+def tabla_multiplicar(n):
+    num=1
+    while num<=10:
+        print(f" {n} * {num} = {num * n}")
+        num+=1
+
+tabla_multiplicar(4)
+
+# Ejercicio 10
+
+def adivina_numero(intentos):
+    import random
+
+    num_secreto = random.randint(1, 100)
+
+    print("Adivina el número (de 1 a 100):")
+
+    num = int(input("Introduce un número: "))
+
+    while num_secreto != num and intentos > 1:
+        if num_secreto > num:
+            print("Muy bajo")
+        else:
+            print("Muy alto")
+        
+        num = int(input("Introduce otro número: "))
+
+    if num_secreto == num:
+        print(f"CORRECTO: era el {num_secreto} y lo has adivinado en {11 - intentos} intentos.")
+    else:
+        print(f"¡Has perdido! El número era: {num_secreto}")
+
+#adivina_numero(6)
+
+# Ejercicio 11
+
+def es_primo(n):
+    import math
+
+    es_primo = True
+
+    if n <= 1:
+        es_primo = False
+    else:
+        for div in range(2, int(math.sqrt(n)) + 1):
+            if n % div == 0:
+                es_primo = False
+                return False
+                break 
+            
+        else:
+            return True
+
+print(es_primo(6))
+
+# Ejercicio 20
+
+def primeros_primos(N):
+    contador_primos = 0  
+    numero = 2          
+
+    while contador_primos < N:
+        es_primo = True
+
+        for divisor in range(2, int(numero ** 0.5) + 1):
+            if numero % divisor == 0:
+                es_primo = False
+                break
+
+        if es_primo:
+            print(numero)
+            contador_primos += 1
+
+        numero += 1
