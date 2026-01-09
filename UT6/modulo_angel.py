@@ -325,4 +325,4 @@ def primeros_primos(N):
 
         numero += 1
         
-    return f"Los primeros {N} números primos son: {', '.join(map(str, primos_encontrados))}"
+    return f"Los primeros {N} números primos son: {', '.join(map(str, primos_encontrados))}"º
