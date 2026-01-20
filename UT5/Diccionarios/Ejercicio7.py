@@ -8,3 +8,5 @@ for letra in palabra:
         contar_letras[letra] += 1
 
 print(contar_letras)
+for clave, valor in contar_letras.items():
+    print("En la palabra ", palabra, "la", clave, "aparece", valor)
