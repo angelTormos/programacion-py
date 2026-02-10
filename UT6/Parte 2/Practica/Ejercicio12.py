@@ -1,4 +1,4 @@
-with open('frases.txt', 'w') as f:
+with open('frases.txt', 'a') as f:
     for i in range(3):
         texto = input("Introaduce una frase: ")
         f.write(f"{texto}\n")
