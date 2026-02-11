@@ -1,0 +1,4 @@
+/lib/var -> no existe
+/etc/hosts -> archivo
+/home/alumno -> no existe
+/home/angtorgua2/Baixades -> directorio
