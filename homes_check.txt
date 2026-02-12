@@ -1,0 +1,3 @@
+Paco ->  /home/Paco -> No existe
+PAco ->  /home/PAco -> No existe
+angtorgua2 ->  /home/angtorgua2 -> OK
