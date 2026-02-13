@@ -1,0 +1,3 @@
+cp saludo.txt /backup
+cp numeros.txt /backup
+cp config.txt /backup
