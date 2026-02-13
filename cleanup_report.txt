@@ -1,0 +1,3 @@
+/tmp -> existe -> 25
+/var/tmp -> existe -> 10
+/noexiste -> NO existe

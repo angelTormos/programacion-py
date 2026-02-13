@@ -1,0 +1,3 @@
+0: ls -la
+1:  df -h
+2:  uname -a
