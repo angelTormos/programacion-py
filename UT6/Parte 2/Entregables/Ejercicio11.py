@@ -1,5 +1,3 @@
-from pathlib import Path
-
 with open("daily_backup_list.txt", "a") as f:
     f.write("saludo.txt\n")
     f.write("numeros.txt\n")
